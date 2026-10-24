@@ -13,9 +13,10 @@ The sensor emits an infrared beam and measures the reflected intensity from near
 * **Operating Current:** $\approx 20\text{ mA}$
 * **Detection Range:** $2\text{ cm}$ to $30\text{ cm}$ (calibrated via onboard potentiometer)
 * **Effective Detection Angle:** $35^\circ$
-* **Output Logic:** Digital Active-LOW
-  $$\text{OUT} = \begin{cases} 0\text{ (LOW)}, & \text{if wall/obstacle detected} \\ 1\text{ (HIGH)}, & \text{if path is clear} \end{cases}$$
 * **Physical Dimensions:** $45\text{ mm} \times 13\text{ mm} \times 8\text{ mm}$
+* **Output Logic:** Digital Active-LOW
+
+$$\text{OUT} = \begin{cases} 0\text{ (LOW)}, & \text{if wall/obstacle detected} \\ 1\text{ (HIGH)}, & \text{if path is clear} \end{cases}$$
 
 ## Phase 2: Pin Configuration & Onboard Diagnostics
 
@@ -37,4 +38,4 @@ The sensor emits an infrared beam and measures the reflected intensity from near
 
 ## Component Visual Reference
 
-![Flying Fish IR Sensor](./IR%20SENSOR.jpg)
+![Flying Fish IR Sensor](./MH-infrared-Obstacle-Sensor-Module-1.jpg)
