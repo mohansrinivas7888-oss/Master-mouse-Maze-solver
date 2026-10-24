@@ -10,10 +10,10 @@ $$d = \frac{v_s \cdot t_{\text{echo}}}{2} = \frac{0.0343 \cdot t_{\text{echo}}}{
 
 ### 1. Electrical & Acoustic Parameters
 
-* **Operating Voltage:** $5.0\text{ V DC}$ *(newer revisions support $3.3\text{ V}$ logic)*
+* **Operating Voltage:** $5.0\text{ V DC}$ (newer revisions support $3.3\text{ V}$ logic)
 * **Operating Current:** $15\text{ mA}$
 * **Acoustic Operating Frequency:** $40\text{ kHz}$
-* **Measurement Range:** $2\text{ cm}$ to $400\text{ cm}$ *(up to $4.5\text{ m}$ depending on revision)*
+* **Measurement Range:** $2\text{ cm}$ to $400\text{ cm}$ (up to $4.5\text{ m}$ depending on revision)
 * **Ranging Accuracy:** $\pm 3.0\text{ mm}$
 * **Effective Cone Angle:** $15^\circ$ to $30^\circ$
 
@@ -32,10 +32,4 @@ $$d = \frac{v_s \cdot t_{\text{echo}}}{2} = \frac{0.0343 \cdot t_{\text{echo}}}{
 
 1. **Trigger Pulse:** Pull the `Trig` pin `HIGH` for at least $10\text{ }\mu\text{s}$, then return it `LOW`.
 2. **Acoustic Burst:** The transmitter automatically sends eight $40\text{ kHz}$ square-wave ultrasonic pulses.
-3. **Echo Capture:** The `Echo` pin transitions `HIGH` until the reflected wave returns, allowing the microcontroller hardware timer/interrupt to measure the exact pulse width in microseconds ($\mu\text{s}$).
-
----
-
-## Component Visual Reference
-
-![HC-SR04 Ultrasonic Sensor](./HR-SR04.jpg)
+3. **Echo Capture:** The `Echo` pin transitions `HIGH` until the reflected wave returns, allowing the microcontroller hardware timer/interrupt
