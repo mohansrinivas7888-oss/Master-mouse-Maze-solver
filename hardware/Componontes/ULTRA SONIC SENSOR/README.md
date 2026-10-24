@@ -33,3 +33,13 @@ $$d = \frac{v_s \cdot t_{\text{echo}}}{2} = \frac{0.0343 \cdot t_{\text{echo}}}{
 1. **Trigger Pulse:** Pull the `Trig` pin `HIGH` for at least $10\text{ }\mu\text{s}$, then return it `LOW`.
 2. **Acoustic Burst:** The transmitter automatically sends eight $40\text{ kHz}$ square-wave ultrasonic pulses.
 3. **Echo Capture:** The `Echo` pin transitions `HIGH` until the reflected wave returns, allowing the microcontroller hardware timer/interrupt
+
+3. **Echo Capture:** The `Echo` pin transitions `HIGH` until the reflected wave returns, allowing the microcontroller hardware timer/interrupt to measure the exact pulse width in microseconds.
+
+---
+
+## Component Visual Reference
+
+![HC-SR04 Ultrasonic Sensor](<./US HR-SR04.jpeg>)
+
+![HC-SR04 Ranging Principle](./hc-sr04.gif)
