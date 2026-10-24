@@ -1,0 +1,26 @@
+The "Flying Fish" IR infrared obstacle and proximity sensor module uses an active infrared emitter and photodiode pair managed by a voltage comparator
+
+
+Technical Specifications
+
+• Operating Voltage: 3.3V to 5V DC
+• Detection Range: 2 cm to 30 cm (adjustable via onboard potentiometer)
+• Detection Angle: 35°
+• Output Type: Digital (LOW when an obstacle is detected, HIGH otherwise)
+• Comparator IC: LM393
+• Operating Current: ~20 mA
+• Dimensions: Approx. 45 mm x 13 mm x 8 mm
+
+
+Pin Configuration
+
+• VCC: 3.3V – 5V power supply input
+• GND: Ground connection
+• OUT: Digital signal output (goes low in the presence of a reflected obstacle)
+
+
+Onboard Indicators & Controls
+
+• Power LED: Illuminates when power is applied to the module.
+• Obstacle/Status LED: Illuminates when an object is detected within range.
+• Potentiometer: Turn clockwise to increase detection distance; turn counter-clockwise to decrease detection distance

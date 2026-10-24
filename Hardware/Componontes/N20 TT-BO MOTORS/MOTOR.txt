@@ -1,0 +1,15 @@
+
+Key Specifications
+
+• Operating Voltage: 3V to 6V DC
+• Gear Reduction Ratio: 1:48 (standard)
+• No-Load Speed:
+	• ~200 ± 10% RPM at 6V
+	• ~90 ± 10% RPM at 3V
+• No-Load Current:
+	• ~200 mA at 6V
+	• ~150 mA at 3V
+• Shaft Type: Single Shaft
+• Material: Plastic casing with internal metal/plastic gear train
+• Approximate Dimensions: 64.2 x 22.5 x 18.8 mm
+• Weight: ~30 g
