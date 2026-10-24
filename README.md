@@ -6,6 +6,7 @@ An autonomous Micromouse robot engineered to navigate, map, and sprint unknown m
 
 ## Overview
 
+
 Master-Mouse operates on a two-phase navigation workflow:
 1. **Search & Map Phase:** Systematically explores unknown corridors using wall detection and a dynamic **Flood Fill** algorithm to map grid weights and prevent circular loops.
 2. **Speed Run Phase:** Computes the shortest trajectory using **A* / Dijkstra** pathfinding and executes a high-speed sprint to the maze center.
@@ -26,6 +27,7 @@ Master-Mouse operates on a two-phase navigation workflow:
 ---
 
 ## System Architecture
+
 
 The robot executes a continuous real-time control loop:
 ```text
