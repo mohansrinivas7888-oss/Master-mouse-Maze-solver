@@ -32,4 +32,4 @@ Accurate maze cell tracking ($18\text{ cm}$ per unit cell) depends on maintainin
 
 ## Component Visual Reference
 
-![Micromouse Traction Wheel](./Wheels.jpg)
+![Micromouse Traction Wheel](<./Exact Image Name Here.jpg>)
