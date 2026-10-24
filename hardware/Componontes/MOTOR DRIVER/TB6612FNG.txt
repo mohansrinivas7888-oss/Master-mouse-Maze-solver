@@ -1,0 +1,24 @@
+
+Key Specifications
+
+• Motor Voltage (VM): 2.5V to 13.5V (max 15V)
+• Logic Voltage (VCC): 2.7V to 5.5V (compatible with 3.3V and 5V systems)
+• Continuous Current: 1.2A per channel
+• Peak Current: 3.2A per channel (single pulse/inrush)
+• PWM Frequency: Up to 100 kHz
+• Control Modes: Clockwise (CW), Counter-Clockwise (CCW), Short-Brake, and Stop/Coast
+
+Main Features & Protection
+
+• MOSFET Output Stage: Lower voltage drop and less heat dissipation compared to older L298N drivers.
+• Standby Pin (STBY): Puts the module into a low-power sleep mode.
+• Built-in Protections: Thermal shutdown circuit, low-voltage detection, and internal filtering/decoupling capacitors.
+
+Pinout Overview
+
+• VM & VCC: Power supply inputs for the motors and the logic circuit respectively.
+• GND: Ground pins.
+• PWMA / PWMB: PWM speed control inputs for Channel A and Channel B.
+• AIN1 / AIN2 & BIN1 / BIN2: Direction control inputs.
+• AO1 / AO2 & BO1 / BO2: Motor output terminals.
+• STBY: Standby activation pin (must be pulled HIGH to enable the driver).

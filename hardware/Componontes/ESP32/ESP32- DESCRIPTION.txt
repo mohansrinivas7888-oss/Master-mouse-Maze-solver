@@ -1,0 +1,15 @@
+Introduction to ESP32
+ESP32 comes with an on-chip 32-bit microcontroller with integrated Wi-Fi + Bluetooth + BLE features that targets a wide range of applications. It is a series of low-power and low-cost developed by Espressif Systems.
+
+
+ESP32 Wroom Development Board
+ 
+
+Features of ESP-Wroom-32
+ESP-Wroom-32 contains a low-power Tensilica Xtensa® Dual-Core 32-bit LX6 microprocessor at 240 MHz: 994.26 CoreMark; 4.14 CoreMark/MHz
+448 KB of ROM for booting and core functions.
+520 KB of on-chip SRAM for data and instructions.
+4MB of Flash Memory
+16 KB SRAM in RTC
+Wi-Fi 802.11b/g/n
+Bluetooth v4.2 BR/EDR and Bluetooth LE specifications
