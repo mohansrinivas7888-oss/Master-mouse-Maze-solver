@@ -29,4 +29,4 @@ Because the OselTech $18650$ is an **unprotected cell** (lacking an internal Bat
 
 ## Component Visual Reference
 
-![OselTech 18650 Battery](./3800MHA%20-%203.7V.jpg)
+![OselTech 18650 Battery](./oseltech-3800-mah-18650-3-7v-li-ion-rechargeable-battery-500x500.jpg)
