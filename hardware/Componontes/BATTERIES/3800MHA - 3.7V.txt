@@ -1,46 +1,32 @@
-# 🔋 OselTech 18650 3800mAh 3.7V Li-Ion Rechargeable Battery
+# OselTech 18650 Li-Ion Power System
 
-![Chemistry](https://img.shields.io/badge/Chemistry-Li--Ion-blue?style=flat-square)
-![Voltage](https://img.shields.io/badge/Nominal_Voltage-3.7V-success?style=flat-square)
-![Capacity](https://img.shields.io/badge/Capacity-3800mAh-orange?style=flat-square)
-![Form Factor](https://img.shields.io/badge/Form_Factor-18650-lightgrey?style=flat-square)
+Master-Mouse utilizes high-capacity **OselTech 18650** lithium-ion rechargeable cells to supply regulated power to the microcontroller logic and high-drain DC gear motors during autonomous maze runs.
 
----
+## Phase 1: Cell Architecture & Specifications
 
-## 📖 Overview
-The **OselTech 18650** is a high-capacity lithium-ion rechargeable cell designed for portable electronics and robotics applications (such as Micromouse maze solvers). Operating at a nominal voltage of **3.7V** with a **3800mAh** capacity, it features a standard 18650 form factor (`18mm × 65mm`) and a flat-top terminal configuration. Under standard operating conditions, it supports up to **1,000 charge-discharge cycles**.
+The primary energy storage unit operates on a standard cylindrical $18\text{ mm} \times 65\text{ mm}$ form factor with a flat-top terminal configuration.
 
-> [!WARNING]
-> **SAFETY & PROTECTION NOTICE (UNPROTECTED CELL)**  
-> This battery **does not** contain a built-in Battery Management System (BMS). External protection circuitry (such as a 1S/2S BMS module) or microcontroller ADC voltage monitoring is strictly required to prevent:
-> * **Overcharging:** Voltage exceeding `4.2V`
-> * **Over-discharging:** Voltage dropping below `3.0V`
-> * **Short circuits & thermal runaway**
+### 1. Electrical & Physical Parameters
 
----
+* **Brand:** OselTech
+* **Chemistry & Form Factor:** $18650$ Lithium-Ion (Li-Ion)
+* **Nominal Capacity:** $3800\text{ mAh}$
+* **Voltage Profile:**
+  $$\text{Nominal} = 3.7\text{ V}, \quad V_{\text{max}} = 4.2\text{ V}, \quad V_{\text{cutoff}} = 3.0\text{ V}$$
+* **Terminal Configuration:** Flat Top
+* **Cycle Life:** Up to $1000$ charge-discharge cycles
+* **Operating Temperature Range:** $-20^\circ\text{C}$ to $+85^\circ\text{C}$
 
-## ⚙️ Technical Specifications
+## Phase 2: Safety & Power Management
 
-| Parameter | Specification |
-| :--- | :--- |
-| **Brand** | OselTech |
-| **Battery Chemistry** | Lithium-Ion (Li-Ion) |
-| **Form Factor** | 18650 Cylindrical |
-| **Nominal Capacity** | `3800 mAh` |
-| **Nominal Voltage** | `3.7 V` |
-| **Full Charge Voltage** | `4.2 V` |
-| **Discharge Cutoff Voltage** | `3.0 V` |
-| **Terminal Type** | Flat Top |
-| **Protection Circuit** | None *(Unprotected Cell)* |
-| **Cycle Life** | Up to 1,000 charge cycles |
-| **Operating Temperature** | `-20°C` to `+85°C` |
-| **Physical Dimensions** | `18 mm` (Diameter) × `65 mm` (Height) |
+Because the OselTech $18650$ is an **unprotected cell** (lacking an internal Battery Management System), external hardware and firmware safeguards are enforced:
+
+1. **Over-Discharge Protection:** Voltage must never drop below $3.0\text{ V}$ under load; firmware ADC monitoring triggers a low-voltage cutoff at $3.2\text{ V}$.
+2. **Charging Regulation:** Cells require a dedicated constant-current/constant-voltage ($\text{CC/CV}$) charger terminating strictly at $4.2\text{ V}$.
+3. **Thermal & Short-Circuit Isolation:** External BMS circuitry isolates the power rail against peak stall currents from the drive motors.
 
 ---
 
-## ✨ Key Features & Benefits
+## Component Visual Reference
 
-* ⚡ **High Energy Density:** The `3800mAh` capacity provides extended runtime for high-drain microcontrollers (`ESP32-S3`), IR sensors, and DC motor drivers.
-* 🔄 **Long Lifespan:** Rated for up to `1,000` charge-discharge cycles, minimizing long-term replacement costs.
-* 🌡️ **Wide Thermal Range:** Delivers stable voltage output across temperatures from `-20°C` to `+85°C`.
-* 📐 **Compact Form Factor:** Standard `18mm × 65mm` footprint fits directly into standard
+![OselTech 18650 Battery](./3800MHA%20-%203.7V.jpg)
