@@ -1,43 +1,46 @@
-========================================================================
-       OSELTECH 18650 3800mAh 3.7V LI-ION RECHARGEABLE BATTERY
-========================================================================
+# 🔋 OselTech 18650 3800mAh 3.7V Li-Ion Rechargeable Battery
 
-OVERVIEW
---------
-The OselTech 18650 is a high-capacity lithium-ion rechargeable cell 
-designed for portable electronics and robotics applications. Operating 
-at a nominal voltage of 3.7V with a 3800mAh capacity, it features a 
-standard 18650 form factor (18mm x 65mm) and a flat-top terminal 
-configuration. Under standard operating conditions, it supports up to 
-1,000 charge-discharge cycles.
+![Chemistry](https://img.shields.io/badge/Chemistry-Li--Ion-blue?style=flat-square)
+![Voltage](https://img.shields.io/badge/Nominal_Voltage-3.7V-success?style=flat-square)
+![Capacity](https://img.shields.io/badge/Capacity-3800mAh-orange?style=flat-square)
+![Form Factor](https://img.shields.io/badge/Form_Factor-18650-lightgrey?style=flat-square)
 
-[!] SAFETY & PROTECTION NOTICE:
-This is an UNPROTECTED cell. It does not contain a built-in Battery 
-Management System (BMS). External protection circuitry or software 
-voltage monitoring is strictly required to prevent overcharging (>4.2V), 
-over-discharging (<3.0V), and short circuits.
+---
 
+## 📖 Overview
+The **OselTech 18650** is a high-capacity lithium-ion rechargeable cell designed for portable electronics and robotics applications (such as Micromouse maze solvers). Operating at a nominal voltage of **3.7V** with a **3800mAh** capacity, it features a standard 18650 form factor (`18mm × 65mm`) and a flat-top terminal configuration. Under standard operating conditions, it supports up to **1,000 charge-discharge cycles**.
 
-TECHNICAL SPECIFICATIONS
-------------------------
-* Brand                 : OselTech
-* Battery Chemistry     : Lithium-Ion (Li-Ion)
-* Form Factor           : 18650
-* Nominal Capacity      : 3800 mAh
-* Nominal Voltage       : 3.7 V
-* Full Charge Voltage   : 4.2 V
-* Cutoff Voltage        : 3.0 V
-* Terminal Type         : Flat Top
-* Protection Circuit    : None (Unprotected Cell)
-* Cycle Life            : Up to 1,000 charge cycles
-* Operating Temperature : -20°C to +85°C
-* Physical Dimensions   : 18 mm (Diameter) x 65 mm (Height)
+> [!WARNING]
+> **SAFETY & PROTECTION NOTICE (UNPROTECTED CELL)**  
+> This battery **does not** contain a built-in Battery Management System (BMS). External protection circuitry (such as a 1S/2S BMS module) or microcontroller ADC voltage monitoring is strictly required to prevent:
+> * **Overcharging:** Voltage exceeding `4.2V`
+> * **Over-discharging:** Voltage dropping below `3.0V`
+> * **Short circuits & thermal runaway**
 
+---
 
-KEY FEATURES & BENEFITS
------------------------
-1. High Energy Density  : 3800mAh capacity provides extended runtime for 
-                          microcontrollers and DC motor drivers.
-2. Long Lifespan        : Rated for up to 1,000 cycles, reducing long-term 
-                          replacement costs.
-3. Wide Thermal Range
+## ⚙️ Technical Specifications
+
+| Parameter | Specification |
+| :--- | :--- |
+| **Brand** | OselTech |
+| **Battery Chemistry** | Lithium-Ion (Li-Ion) |
+| **Form Factor** | 18650 Cylindrical |
+| **Nominal Capacity** | `3800 mAh` |
+| **Nominal Voltage** | `3.7 V` |
+| **Full Charge Voltage** | `4.2 V` |
+| **Discharge Cutoff Voltage** | `3.0 V` |
+| **Terminal Type** | Flat Top |
+| **Protection Circuit** | None *(Unprotected Cell)* |
+| **Cycle Life** | Up to 1,000 charge cycles |
+| **Operating Temperature** | `-20°C` to `+85°C` |
+| **Physical Dimensions** | `18 mm` (Diameter) × `65 mm` (Height) |
+
+---
+
+## ✨ Key Features & Benefits
+
+* ⚡ **High Energy Density:** The `3800mAh` capacity provides extended runtime for high-drain microcontrollers (`ESP32-S3`), IR sensors, and DC motor drivers.
+* 🔄 **Long Lifespan:** Rated for up to `1,000` charge-discharge cycles, minimizing long-term replacement costs.
+* 🌡️ **Wide Thermal Range:** Delivers stable voltage output across temperatures from `-20°C` to `+85°C`.
+* 📐 **Compact Form Factor:** Standard `18mm × 65mm` footprint fits directly into standard
